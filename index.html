@@ -30,6 +30,11 @@ table, th, td {
 border: 2px solid black;
 border-collapse: collapse;
 }
+.yeet {
+background-color: yellow;
+margin: 20px;
+padding: 1px;
+font-color: purple;
 </style>
 
 <body style="background-color:SlateGray">
@@ -156,6 +161,15 @@ memes rule <br>
 <li>Hi</li>
 <li>BPAS</li>
 <p>Life <span style="color:red">REALLY </span>sucks <span style="color:green">RIGHT</span>?</p>
+<button onclick="hello">hide elements in the yeet-class order</button>
+<script>
+function hello {
+  var x = document.getElementsByClassName("yeet");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
